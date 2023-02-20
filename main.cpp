@@ -3,7 +3,7 @@ using namespace std;
 int main()
 {
 	int a;
-	cout << "Input znak->";
+	cout << "Input number->";
 	cin >> a;
 	int* x_ptr = &a;
 	if (a > 0 || a == 0)
