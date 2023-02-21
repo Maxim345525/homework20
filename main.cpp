@@ -3,15 +3,15 @@ using namespace std;
 int main()
 {
     int n;
-    int* x_ptr = &n;
     cout << "Enter n: ";
+    int* x_ptr = &n;
     cin >> n;
     int* Arr;
     Arr = new int[n];
     cout << "Array:" << endl;
-    for (int i = 0; i < n; i++) cin >> *(Arr + i);
+    for (int i = 0; i < *x_ptr; i++) cin >> *(Arr + i);
     int sum = 0;
-    for (int i = 0 + 1; i < n; i++) 
+    for (int i = 0 + 1; i < *x_ptr; i++) 
     {
         sum += Arr[i];
     }
